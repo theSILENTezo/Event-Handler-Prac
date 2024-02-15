@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <title>Event Handler: On Click</title>
+    </head>
+    <body>
+        <button class="butt" onclick="alert('Hello There')">Click Me!!!</button>
+
+        <!--
+            Event Handlers
+                1. onChange
+                2. onClose
+                3. onMouseClick
+                4. onMouseHover
+                5. onKeydown
+                6. onLoad
+        -->
+
+        <!--
+            <div id="box"></div>
+            <script>
+                /*Creates a const var, and add an event on clicked*/
+                    const boxDiv = document.getElementById("box");
+                    boxDiv.addEventListener('click', function(e){
+                        alert("Kraft Singles!");
+                    })
+
+                /*Same as method above, just written a diffway*/
+                    function handleBoxClicked(e){
+                        alert("Kraft Singles!");
+                    }
+                    boxDiv.addEventListener("click", handleBoxClicked);
+
+                //In depth notes
+                    /*
+                        (e) = event obj; gives info of obj's discription 
+                            + can be written anyother way besides 'e'
+                    */
+
+                boxDiv.addEventListener("click", function(e){
+                    console.log(e);
+                });
+
+                //"this" refers to the function itself; refers to an undefined obj
+                    boxDiv.addEventListener("click", function(e){
+                        console.log(this);
+                    })
+
+                //Arrow Function
+                    boxDiv.addEventListener("click", e =>{
+                        console.log(e);
+                    })
+                        /*
+                            Arrows retain 'this' value of the parent function
+                                + would refer to befor the "boxDiv"
+                        */
+            </script>
+        -->
+
+
+        <button class="btn">Change Color</button>
+    </body>
+</html>

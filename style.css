@@ -1,0 +1,55 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    margin: 10px 0 20px 0;
+}
+
+.butt{
+    border: 2px solid tan;
+    border-radius: 10px;
+    color: brown;
+    padding: 8px 14px;
+    font-size: 16px;
+    text-align: center;
+    background-color: wheat;
+}
+
+.butt:hover{
+    border: 2px solid orange;
+    background-color: teal;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/*
+/* '#' used for id tags
+#box{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: #edab2f;
+    align-items: center;
+    cursor: pointer;
+}
+*/
+
+.btn{
+    border: 2px solid tan;
+    border-radius: 10px;
+    color: brown;
+    padding: 8px 14px;
+    font-size: 16px;
+    text-align: center;
+    background-color: wheat;
+}
+
+.btn:hover{
+    border: 2px solid orange;
+    background-color: teal;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
