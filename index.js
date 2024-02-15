@@ -7,7 +7,7 @@ function random(number){
 }
 
 btn.addEventListener("click", () =>{
-    const rndCl = "rgb(${random(255)} ${(random(255)} ${random(255)})";
+    const rndCl = `rgb(${random(255)} ${random(255)} ${random(255)})`;
     document.body.style.backgroundColor = rndCl;
 })
 
